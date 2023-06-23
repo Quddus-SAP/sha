@@ -1,0 +1,51 @@
+<mvc:View controllerName="sha.controller.IC"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <Table id="IC_T" items="{/IndividualCustomerCollection}" growing="true" growingThreshold="10">
+                <headerToolbar>
+                    <Toolbar id="IC_TB" width="30%">
+                        <SearchField id="IC_SF"></SearchField>
+                    </Toolbar>
+                </headerToolbar>
+                <columns>
+                    <Column id="IC_C_N">
+                        <Text id="IC_C_NT" text="{i18n>FormattedName}" />
+                    </Column>
+                     <Column id="IC_C_P">
+                        <Text id="IC_C_PT" text="{i18n>Phone}" />
+                    </Column>
+                     <Column id="IC_C_M">
+                        <Text id="IC_C_MT" text="{i18n>Mobile}" />
+                    </Column>
+                     <Column id="IC_C_E">
+                        <Text id="IC_C_ET" text="{i18n>Email}" />
+                    </Column>
+                     <Column id="IC_C_CI">
+                        <Text id="IC_C_CIT" text="{i18n>CustomerID}" />
+                    </Column>
+                     <Column id="IC_C_LS">
+                        <Text id="IC_C_LST" text="{i18n>LifeCycleStatusCodeText}" />
+                    </Column>
+                     <Column id="IC_C_CB">
+                        <Text id="IC_C_CBT" text="{i18n>CreatedBy}" />
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem id="IC_CLB">
+                        <cells>
+                            <Text id="IC_C_NV" text="{FormattedName}" />
+                            <Text id="IC_C_PV" text="{Phone}" />
+                            <Text id="IC_C_MV" text="{Mobile}" />
+                            <Text id="IC_C_EV" text="{Email}" />
+                            <Text id="IC_C_CIV" text="{CustomerID}" />
+                            <Text id="IC_C_LSV" text="{LifeCycleStatusCodeText}" />
+                            <Text id="IC_C_CBV" text="{CreatedBy}" />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>
