@@ -99,6 +99,13 @@
           "target": [
             "TargetIC"
           ]
+        },
+        {
+          "name": "RouteIC_QC",
+          "pattern": "NewInstance",
+          "target": [
+            "TargetIC_QC"
+          ]
         }
       ],
       "targets": {
@@ -108,6 +115,13 @@
           "clearControlAggregation": false,
           "viewId": "IC",
           "viewName": "IC"
+        },
+        "TargetIC_QC": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "IC_QC",
+          "viewName": "IC_QC"
         }
       }
     },

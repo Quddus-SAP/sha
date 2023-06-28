@@ -7,6 +7,7 @@
                 <headerToolbar>
                     <Toolbar id="IC_TB" width="30%">
                         <SearchField id="IC_SF"></SearchField>
+                        <Button id="IC_B" text="Add" press="QuickCreate"/>
                     </Toolbar>
                 </headerToolbar>
                 <columns>

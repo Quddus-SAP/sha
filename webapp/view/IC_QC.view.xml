@@ -1,0 +1,32 @@
+<mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:f="sap.ui.layout.form" controllerName="sha.controller.IC_QC">
+    <f:SimpleForm id="ic_qc_sf" width="30%">
+        <VBox id="ic_qc_vb" direction="Column">
+            <Text id="ic_qc_fn_t" text="first Name"/>
+            <Input id="ic_qc_fn_tv" value="{IC>/FirstName}"/>
+
+            <Text id="ic_qc_ln_t" text="Last Name"/>
+            <Input id="ic_qc_ln_tv" value="{IC>/LastName}"/>
+
+            <Text id="ic_qc_c_t" text="Role Code"/>
+            <Input id="ic_qc_c_tv" value="{IC>/RoleCode}"/>
+
+            <Text id="ic_qc_cn_t" text="Country"/>
+            <Input id="ic_qc_cn_tv" value="{IC>/CountryCode}"/>
+
+            <Text id="ic_qc_e_t" text="Email"/>
+            <Input id="ic_qc_e_tv" value="{IC>/Email}"/>
+
+            <Text id="ic_qc_m_t" text="Mobile"/>
+            <Input id="ic_qc_m_tv" value="{IC>/Mobile}"/>
+
+            <Text id="ic_qc_p_t" text="Phone"/>
+            <Input id="ic_qc_p_tv" value="{IC>/Phone}"/>
+        </VBox> 
+    <f:toolbar>
+        <Toolbar id="ic_qc_tb">
+            <Button id="ic_qc_add" text="Add" press="Add_Record"/>
+            <Button id="ic_qc_close" text="Close" press="Close_Screen"/>
+        </Toolbar>
+    </f:toolbar>
+    </f:SimpleForm>
+</mvc:View>
